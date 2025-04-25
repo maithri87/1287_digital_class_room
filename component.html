@@ -1,0 +1,10 @@
+<div class="container">
+    <h2>Digital Notice Board</h2>
+    <div *ngFor="let notice of notices" class="card">
+      <h3>{{ notice.title }}</h3>
+      <p>{{ notice.content }}</p>
+      <small>{{ notice.date | date:'short' }} - {{ notice.category }}</small>
+      <hr />
+    </div>
+  </div>
+  
